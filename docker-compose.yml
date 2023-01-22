@@ -11,3 +11,13 @@ services:
       - ./init:/docker-entrypoint-initdb.d
     ports:
       - "5432:5432"
+      
+  pgadmin:
+    container_name: pgadmin-client
+    image: dpage/pgadmin4:5.7
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "pgadmin@mail.com"
+      PGADMIN_DEFAULT_PASSWORD: "pgadmin"
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+    ports:
+      - "5050:80"
