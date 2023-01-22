@@ -19,6 +19,16 @@
 - Пароль: postgres
 - Схема: bookings
 
+Также можно использовать pgAdmin клиент, который стартует в отдельном контейнере вместе с postgres:
+
+`http://localhost:5050`
+
+В качестве Hostname/address необходимо указать имя контейнера с postgres:
+
+`edu-demo-db-postgres`
+
+![image](https://user-images.githubusercontent.com/10981830/213941034-dc59402c-b8ce-44ae-bb40-710f0d48ad88.png)
+
 ### Примеры SQL-запросов
 Примеры SQL-запросов для данной БД представлены на [wiki-странице](https://github.com/aleks-rad/edu-demo-db-postgres-docker/wiki/%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B-SQL-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2)
 
